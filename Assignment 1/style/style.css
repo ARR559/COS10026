@@ -1,0 +1,979 @@
+/*
+filename: style.css
+author: Leonard A Willis
+created: 12/03/2023
+last modified: 2/04/2023
+description: index.html
+*/
+
+/* Header and Footer CSS - Written by Ethan Morrice and Leonard Willis */
+.header_link {
+    text-decoration: none; 
+    padding-right: 0em; 
+    font-size:2vw; 
+    position:relative; 
+    bottom: 2.5vw; 
+    color: white;
+    font-family: "consolas";
+	background: 
+		linear-gradient(to right, #FFFFFF, #FFFFFF),
+		linear-gradient(to right, #FFFF22, #29CEBB, #ccccFF);
+	background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+	transition: background-size 400ms;
+	text-align: right;
+	margin: 1em;	
+}
+.header_link:hover {
+    font-size: 2.0vw;
+}
+
+.header_link:hover,
+.header_link:focus {
+	background-size: 0 0.1em, 100% 0.1em;
+}
+
+
+#selected { font-weight: bold; font-size: 2.5vw;  background-size: 0 0.1em, 100% 0.1em;}
+
+
+
+#header { 
+	background-color: #2985F4; 
+    width: 100%;
+    height: 20%;
+    position: sticky; top: 0;
+    margin: 0em;
+	 z-index: 1;
+    background-image: linear-gradient(90deg, #29CEBB, #2985F4, #2985F4, #2985F4);
+	}
+
+#logo {width: 10%; 
+    height: 10%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+footer {background-color: #3a3a3a;
+    border-top: 2px double #FFFFFF;
+  }
+footer table {
+   width: 100%; 
+   background-color: #3a3a3a;
+  }
+footer td{
+  width: 30%; 
+  padding-top:1%; 
+  padding-bottom:1%;
+}
+footer td:first-child{text-align: left;padding-left:2%}
+footer td:nth-child(2){text-align:center;padding-left:2%}
+footer td:last-child{text-align:right;padding-right:2%}
+
+footer a {
+  color:white;
+}
+/* Index Page CSS - Written Leonard Willis */
+
+body {
+  color: #FFFFFF;
+  background-color: #1e1e1e;
+  margin: 0em;
+   animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+* {
+    font-family: "consolas";
+}
+
+.intro_margin {
+    margin-left: 2px;
+}
+
+
+.intro_center {
+  text-align: center;
+  float: center;
+  color: #FFFFFF;
+  font-size: 1.2em;
+}
+
+.intro_icons {
+    height: 2.5em;
+    width: 2.5em;
+}
+th {
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+td { 
+text-align: center;
+}
+.intro_stock {
+    background-image: url("images/stock_photo.png");
+    background-repeat: no-repeat;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 9%;
+    width: 90%;
+}
+
+/* Apply.html - Written by Ethan Morrice */
+
+/* Inputs styling */
+form {padding: 1%;}
+
+form input, select, option, textarea{
+    background-color:#000000;
+    color:#FFFFFF;
+    font-size: 1.5vw;
+}
+
+form input {
+    margin-top: 1vh;
+    margin-left: 2vh;
+    padding: 1%;
+    border: 1px solid #5e5e5e;
+    border-radius: 5px 20px 5px 5px;
+    width: 10vw;
+    text-align:center;
+}
+form input:hover, select:hover, textarea:hover{
+    border: 1px solid #AFAFAF;
+    background-color: #2e2e2e;
+}
+form label {
+    padding-left: 5%;
+    font-size: 2.1vw;
+}
+form label:first-child{font-size: 2.2vw; padding-left:31vw; padding-right:1vw;}
+form h2
+{
+    padding-bottom: 0.5vw;
+    border-bottom: 4px double #29CEBB;
+    width: 20vw;
+}
+form select {
+    padding: 0.5vw;
+    margin-top: 1vh;
+    width: 15vh;
+    text-align: center;
+}
+#ref_number
+{
+    font-size: 1.2vw;
+    text-align:center;
+    width: 13vw;
+}
+fieldset {
+    width:40vw;
+    margin-left:2vw;
+    margin-top: 2vh;
+    text-align: center;
+}
+fieldset label {
+    padding-left: 1px;
+    font-size: 1.7vw;
+}
+
+/* Label styling */
+
+.personal_details {
+    width: 17vw;
+    text-align: center;
+}
+.contact_info {
+    width: 34vw;
+    text-align: center;
+}
+textarea {
+    margin-top: 2vh;
+    margin-left: 10vh;
+    border: 1px solid #5e5e5e;
+    border-radius: 5px 20px 5px 5px;
+    width: 50vw;
+    height: 20vh;
+}
+/* Submit button styling */
+#submit_button {
+
+    background-color: #B9B9B9;
+    color:#000000;
+    position: relative;
+    left: 1%;
+    top: 1vh;
+    margin-left: 1%;
+    margin-bottom: 2%;
+}
+
+#submit_button:hover {
+    
+    border: 1px solid #5e5e5e;
+    background-color: #B9B9E9;
+    color: #2985F4
+}
+
+
+/* ########################################################## */
+/*Enhacements.html - developed by Nicolo */
+
+#enhancements {
+    margin-left: 1vw;
+}
+#enhancements h1, h2, h3, h4 {color: rgb(78, 234, 255);
+    font-family:"consolas" ;}
+
+ p {font-family:"consolas" ;
+color: white
+}
+
+/* ########################################################## */
+/* Jobs.html - developed by Aaryan*/
+
+#intro_page {
+  width:  100% ;
+}
+
+/*-------------------------Flip Box---------------------*/
+#filpflops 
+/* job description card flip */
+
+.flip-center{
+   
+   margin-left: 15em;
+}
+.flip-box {
+   background-color: transparent;
+   width: 400px;
+   height: 500px;
+   border: 1px solid rgb(241, 236, 236);
+   perspective: 1000px;
+   
+ }
+ 
+ .flip-box-inner {
+   position: relative;
+   width: 400px;
+   height: 500px;
+   text-align: center;
+   transition: transform 0.8s;
+   transform-style: preserve-3d;
+   
+ }
+ 
+ .flip-box:hover .flip-box-inner {
+   transform: rotateY(180deg);
+ }
+ 
+ .flip-box-front, .flip-box-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
+ }
+ 
+ .flip-box-front {
+   padding: 30px;
+   background-color: #bbb;
+   color: black;
+ }
+ 
+ .flip-box-back {
+   padding: 10px;
+   background-color: rgb(22, 41, 60);
+   color: rgb(216, 20, 20);
+   transform: rotateY(180deg);
+ }
+
+
+
+/*------------------margin left-------------------------*/
+.marginbox 
+{margin-left: 50px;
+
+}
+
+/*-----------------box--------------------*/
+.smallbox {
+ 
+ display: inline-block;
+ border: 2px solid rgb(152, 221, 14);
+ border-radius: 19px;
+ padding-left: 2px; 
+ margin: 15px; 
+ text-align: center;
+
+}
+
+.smallright {
+ float: right;
+ 
+
+}
+
+
+.leftalign {
+ text-align: left;
+
+}
+
+
+#h1_heading{
+ display: inline-block;
+ border: 2px solid rgb(50, 13, 124);
+ border-radius: 12px;
+ padding-left: 2px;
+  margin: 5px;
+ text-align: center;
+
+}
+
+
+.rightmargin {
+ margin-right: 50px;
+}
+
+
+
+
+
+/*----------------------------Apply Button---------------------*/
+.button { 
+ display: inline-block;
+ border-radius: 4px;
+ background-color:rgb(242, 86, 19);
+ color:rgb(245, 240, 240);
+ text-align: center;
+ font-size:30px;
+ padding: 10px;
+ width: 180px;
+ margin: 5px;
+}
+
+.button span {
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ transition: 0.6s;
+}
+
+.button span:after {
+ content: '\00bb';
+ position: absolute;
+ opacity: 0;
+ top: 0;
+ right: -20px;
+ transition: 0.5s;
+}
+
+.button:hover span {
+ padding-right: 25px;
+}
+
+.button:hover span:after {
+ opacity: 1;
+ right: 0;
+}
+
+.centeralign {
+ text-align: center;
+}
+
+aside {
+ width: 30%;
+ padding-left: 20px;
+ margin-left: 20px;
+ float: right;
+ font-style: italic;
+ background-color: rgb(219, 222, 16);
+ border: 2px solid blue;
+}
+
+
+ul li {
+ line-height:2;
+}
+
+ol li {
+ line-height: 2;
+}
+
+/* ########################################################## */
+
+/* About.html - developed by Ibrahim */
+* {
+  font-family:"consolas";
+}
+
+body {
+  color: #FFFFFF;
+  background-color: #1e1e1e;
+  font-family: "consolas";
+}
+/* ------------------------ABOUT INFO-------------------------*/
+#courseinfo-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 20px 20px 0;
+  height: 100%;
+}
+
+#courseinfo {
+  background-color: whitesmoke;
+  width: calc(50% - 20px);
+  margin: 0;
+  background-image: -webkit-linear-gradient(90deg, #6e675f, #6e675f);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px 20px 20px 0;
+}
+
+#coursename {
+  text-decoration: underline;
+  font-size: 24px;
+  font-family: "consolas";
+  font-weight: bold;
+  padding: 10px;
+  white-space: nowrap;
+  color:#2985F4;
+}
+
+#HS1 {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+#profname {
+  font-size: 16px;
+  font-family: "consolas";
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#profname a {
+  color: #e5e5e5;
+  text-decoration: underline;
+}
+
+#profname a:hover {
+  color: #2985F4;
+  text-decoration: underline;
+}
+
+
+#about1c {
+  padding: 0 10px;
+}
+
+#linkedin_link img {
+  float: right;
+  width: 30px;
+  height: auto;
+}
+
+#linkedin_link {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+
+
+dl {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+dt {
+  float: left;
+  clear: left;
+  width: 150px;
+  font-weight: bold;
+  margin-right: 10px;
+  text-align: right;
+}
+
+dt:before {
+  content: "•";
+  margin-right: 5px;
+  color: rgb(255, 255, 255);
+}
+
+dd {
+  margin: 0 0 0 160px;
+}
+
+#aboutIMG-NEXT img {
+  width: 500px; 
+  height: auto;
+  float:right;
+  position: relative; top: -400px;
+  padding-right: 20px;
+  border-left: 5px linear-gradient(90deg, #29CEBB, #2985F4);
+
+}
+
+/* ------------------------ABOUT INFO-------------------------*/
+
+
+
+/* ------------------------ABOUT LARG PIC-------------------------*/
+#aboutLARGEpic-con{
+  padding-bottom: 200px;
+  padding-top: 75px;
+}
+
+#aboutlargepic-wrapper {
+  padding: 20px 20px 20px 0;
+  display: flex;
+  justify-content: center; 
+}
+
+#aboutlargepic {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+  width: 70%;
+}
+
+#aboutlargepic img {
+  max-width: 100%;
+  height: auto;
+  opacity: 1;
+  transition: opacity 0.5s;
+  border-radius: 25px;
+  box-shadow: 10px 10px 5px #2c2c2c;
+}
+
+#aboutlargepic:hover img {
+  opacity: 0.5;
+}
+
+#aboutlargepic:hover .overlay {
+  opacity: 1;
+}
+
+#picdate {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  background-color: (#6e675f);
+}
+
+#ITcolor {
+  background: linear-gradient(90deg, #29CEBB, #2985F4);
+  background-clip: text;
+  -webkit-background-clip: text; 
+  color: transparent;
+  display: inline-block; 
+  font-size: 50px;
+  font-family: "consolas"; 
+}
+
+#Membersoverpic {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#picdate a {
+  color: #e5e5e5;
+  text-decoration: underline;
+  position: relative;
+}
+
+
+
+
+/* ------------------------ABOUT LARG PIC-------------------------*/ 
+
+
+
+/* ------------------------ABOUT TABLE CONTENT-------------------------*/
+#table-container {
+  margin: 0 auto;
+  padding-top: 100px;
+  padding: 100px;
+}
+
+div.timeTable {
+  font-family: "consolas";
+  border: 5px solid #6E675F;
+  background-color: #F5F5F5;
+  width: auto;
+  height: auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.divTable.timeTable .divTableCell, .divTable.timeTable .divTableHead {
+  border: 3px solid #6E675F;
+  padding: 10px 10px;
+}
+
+.divTable.timeTable .divTableBody .divTableCell {
+  font-size: 13px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.divTable.timeTable .divTableRow:nth-child(even) {
+  background: #C6C6C6;
+}
+
+.divTable.timeTable .divTableHeading {
+  background: #2985F4; 
+  border-bottom: 5px solid #6E675F;
+}
+
+.divTable.timeTable .divTableHeading .divTableHead {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 5px solid #6E675F;
+}
+
+.divTable.timeTable .divTableHeading .divTableHead:first-child {
+  border-left: none;
+}
+
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableBody { display: table-row-group;}
+/* ------------------------ ABOUT TABLE CONTENT-------------------------*/
+
+
+
+/* ------------------------ ABOUT SLIDING PICS-------------------------*/
+#About-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 25px;
+}
+
+#About-slider-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#About-slider-container {
+  display: flex;
+  flex-wrap: nowrap;
+  animation-name: slide;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; 
+}
+
+#About-slider-container div {
+  flex-shrink: 0;
+  width: 400px;
+  height: 500px;
+  margin-right: 30px;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#About-slider-container:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+#About-slider {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 100%;
+  margin: 0px; 
+  background-image: linear-gradient(90deg, #6e675f, #6e675f);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0); 
+  }
+  100% {
+    transform: translateX(calc(-100% - 10px)); 
+  }
+}
+/* ------------------------ ABOUT SLIDING PICS-------------------------*/
+
+
+
+/*-------------------ABOUT TEXT IN IMAGES SLIDING---------------------*/
+#About-IBPic {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+#About-IBPic-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#About-IBPic:hover #About-IBPic-text {
+  opacity: 1;
+}
+
+
+
+#About-EthanPic {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+#About-EthanPic-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#About-EthanPic:hover #About-EthanPic-text {
+  opacity: 1;
+}
+
+#About-LeoPic {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+#About-LeoPic-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#About-LeoPic:hover #About-LeoPic-text {
+  opacity: 1;
+}
+
+#About-NicPic {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+#About-NicPic-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#About-NicPic:hover #About-NicPic-text {
+  opacity: 1;
+}
+
+#About-AaryanPic {
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+#About-AaryanPic-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#About-AaryanPic:hover #About-AaryanPic-text {
+  opacity: 1;
+}
+/*-------------------ABOUT TEXT IN IMAGES SLIDING---------------------*/
+
+
+
+/* ------------------------COURSE INFO-------------------------*/
+#courseinfo-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 20px;
+  height: 100%;
+}
+
+#courseinfo {
+  background-color: whitesmoke;
+  width: calc(50% - 20px);
+  margin: 0;
+  background-image: solid  #6e675f;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px #2c2c2c;
+}
+
+#coursename {
+  text-decoration: underline;
+  font-size: 24px;
+  font-family: "consolas";
+  font-weight: bold;
+  padding: 10px;
+  white-space: nowrap;
+  color: #2985F4
+}
+
+#HS1 {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+#profname {
+  font-size: 16px;
+  font-family: "consolas";
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#profname a {
+  color: #e5e5e5;
+  text-decoration: underline;
+}
+
+#profname a:hover {
+  color: #2985F4;
+  text-decoration: underline;
+}
+
+#profinfo {
+  font-size: 16px;
+  font-family: "consolas";
+  margin: 10px 0;
+}
+
+#about1c {
+  padding: 0 10px;
+}
+
+#linkedin_link img {
+  float: right;
+  width: 30px;
+  height: auto;
+}
+
+#linkedin_link {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+
+dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+dt {
+  flex-basis: 30%;
+  text-align: left;
+  font-weight: bold;
+}
+
+dd {
+  flex-basis: 70%;
+  text-align: right;
+}
+
+#aboutIMG-NEXT img {
+  width: 500px; 
+  height: auto;
+  float:right;
+  position: relative; top: -400px;
+  padding-right: 20px;
+  border-left: 7px solid #6e675f;
+}
+/* ------------------------COURSE INFO-------------------------*/ 

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="TAG Group, CTIP, Group project">
+    <meta name="Author" content="Ethan Morrice">
+    <link href= "style/style.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/tag_logo.png">
+    <title> TAG Application</title>
+</head>
+<body>
+<div id="header">
+    <a href="index.html"><img src="images/tag_logo.png" id="logo" alt="TAG LOGO"></a>
+    <a class="header_link" href="index.html">Home</a>
+    <a class="header_link" href="jobs.html">Job Description</a>
+    <a id="selected" class="header_link" href="apply.html">Application</a>
+    <a class="header_link" href="about.html">About Us</a>
+    <a class="header_link" href="enhancements.html">Enhancements</a>
+</div>
+<div class="intro_center">
+    <h1> Job Application Page </h1>
+</div>
+<hr>
+<form id ="application" method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+    <label for="ref_number">Reference Number</label>
+    <input type="text" id="ref_number" name="ref_number" maxlength="5" placeholder="Please enter a code" pattern ="[a-z,A-z,1-9]{5}" required autofocus>
+        <h2>Personal Details:</h2>
+        <label for="first_name" class="personal_label">First Name:&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" id="first_name" name="first_name" maxlength="20" placeholder="Future" class="personal_details" pattern="^[a-z,A-z]+$" required>
+        <br>
+        <label for="last_name" class="personal_label">Last Name:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" id="last_name" name="last_name" maxlength="20" placeholder="Employee" class="personal_details" pattern="^[a-zA-z]+$" required>
+        <br>
+        <label for="date_of_birth" class="personal_label">Date of Birth:</label>
+        <input type="text" id="date_of_birth" name="date_of_birth" maxlength="10" pattern="\d{2}/+\d{2}/\d{4}" placeholder="dd/mm/yyyy" required>
+        <br>
+        <fieldset>
+        <legend>Gender</legend>
+            <label for="female_gender">Female</label>
+            <input type="radio" name="gender" id="female_gender" value="Female" checked="checked"><br>
+            <label for="male_gender">Male&nbsp;&nbsp;</label>
+            <input type="radio" name="gender" id="male_gender" value="Male"><br>
+            <label for="other_gender">Other&nbsp;</label>
+            <input type="radio" name="gender" id="other_gender" value="Other"><br>
+        </fieldset>
+    <h2>Contact Information:</h2>
+    <label for="street_address">Street Address:&nbsp;&nbsp;</label>
+    <input type="text" id="street_address" name="street_address" class="contact_info" placeholder="101 James Street" required>
+    <br>
+    <label for="suburb">Suburb/Town:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="suburb" name="suburb" class="contact_info" placeholder="Hawthorn" required>
+    <br>
+    <label for="state">State/Territory:&nbsp;&nbsp;</label>
+    <select name="state" id="state" required="required">
+        <option value="" selected="selected">State</option>
+        <option value="ACT">ACT</option>
+        <option value="NSW">NSW</option>
+        <option value="NT">NT</option>
+        <option value="QLD">QLD</option>
+        <option value="SA">SA</option>
+        <option value="TAS">TAS</option>
+        <option value="VIC">VIC</option>
+        <option value="WA">WA</option>
+    </select>
+    <br>
+    <label for="postcode">Postcode:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" id="postcode" name="postcode" pattern="\d{4}" placeholder="####" required>
+    <br>
+    <label for="email">Email Address:&nbsp;&nbsp;&nbsp;</label>
+    <input type="email" id="email" name="email" placeholder="name@domain.com" class="contact_info" required="required">
+    <br>
+    <label for="phone">Phone Number:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="tel" id="phone" name="phone" pattern="\d{2} +\d{4}-\d{4}" placeholder="## ####-####" required="required">
+
+    <h2>Skills:</h2>
+    <label for="skill_1">Communication&nbsp;&nbsp;</label>
+    <input type="checkbox" id="skill_1" name="skills[]" value="Communication"><br>
+    <label for="skill_2">Creativity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="checkbox" id="skill_2" name="skills[]" value="Creative"><br>
+    <label for="skill_3">MS Office&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="checkbox" id="skill_3" name="skills[]" value="Office Profiecient"><br>
+    <label for="skill_4">Leadership&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="checkbox" id="skill_4" name="skills[]" value="Leadership"><br>
+    <label for="skill_5">Problem Solving</label>
+    <input type="checkbox" id="skill_5" name="skills[]" value="Problem"><br>
+    <label for="other_skill">Other:</label><br>
+
+    <textarea id="other_skill" name="skills[]" placeholder="Enter any additional skills here"></textarea><br>
+
+    <input id="submit_button" type="Submit" value="Submit">
+
+</form>
+<footer>
+    <table>
+        <tr>
+            <td>Ethan M, Leonard W, Ibrahim M B, Nicolo T, Aaryan B</td>
+            <td><a href="mailto:tag.assitance.group@gmail.com">Contact Us</a></td>
+            <td>&#169; TAG Group 2023</td>
+        </tr>
+    </table>
+</footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Job application form page">
+        <meta name="keywords" content="TAG Group, CTIP, Group project">
+        <meta name="Author" content="Nicolo Taraborrelli">
+        <link href= "style/style.css" rel="stylesheet">
+        <link href= "style/style.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="images/tag_logo.png">
+        <title> TAG Enhancements</title>
+
+    </head>
+
+    <div id="header">
+        <a href="index.html"><img src="images/tag_logo.png" id="logo" alt="TAG LOGO"></a>
+        <a class="header_link" href="index.html">Home</a>
+        <a class="header_link" href="jobs.html">Job Description</a>
+        <a class="header_link" href="apply.html">Application</a>
+        <a class="header_link" href="about.html">About Us</a>
+        <a id="selected" class="header_link" href="enhancements.html">Enhancements</a>
+    </div>
+<div id="enhancements">
+    <body>
+    <h1>Website Enhancements</h1>
+    <h2>HTML Enhancements</h2>
+
+
+    <h3>Flip Box</h3>
+    <P>This allows the user to hover over an element, before the object appears to "flip around" showing related information. 
+        This is done in combination with the CSS, overlapping both elements, before using the css indicator <u><strong> :hover</strong></u>.
+
+        The indicator just edits the opacity of the elements. When one particular needs to be shown, the opacity of that element is set to 1, while the opacity of the other is set to 0.
+        If the other element is now selected ( through the <u><strong>:hover</strong></u> ), then the opacity of the element is set to 0, while the opacity of the other is set to 1. 
+        
+        This is useful because it allows information on the page to be condensed into a smaller space, so it does not overwhelm any potential users. 
+        
+    </P>
+    <p><u><strong>Where I use it:</strong></u>Lines 32-74 (jobs.html) and Lines 246-319 (style.css) on the jobs description page</p>
+    <p> </p>
+    <p><u><strong>Reference:</strong></u> https://www.freelancer.com/articles/web-development/13-cool-tricks-for-html</p>
+
+
+    <h3>Light mode dark mode button</h3>
+    <p>The light/dark mode button is a button which the user can press to change background colour of the page to black and the text to white. 
+        This is a popular choice by users among other applications as it reduces their eye strain by having less bright colours on the page.
+
+        This enhancement uses a <u><strong> &it; button onclick &#x3D; &quot; myFunction() &quot;>Toggle dark mode &lt;/button &gt; </strong> </u>
+        to create the 'Toggle dark mode' button 
+        and change from the pages <u><strong>background-color</strong></u> and <u><strong>text-color</strong> </u>to the new black background and white text. 
+
+        A <u><strong>&lt;script&gt;</strong> </u>imbeds the executed code which is <u><strong>"myFunction()"</strong></u> and also uses <u><strong>var element = document.body</strong> </u>
+        to make the function retrieve and execute the darkmode class list when the <u><strong>"MyFunction()"</strong></u> is toggled. 
+        This is done by<u> <strong>element.classList.toggle("dark-mode");</strong></u>.
+
+    </p>
+    <p><u><strong>Where I use it:</strong></u>Not used, due to javascript</p>
+    <p> </p>
+    <p><u><strong>Reference:</strong></u> https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp </p>
+
+
+    <h2>CSS Enhancements</h2>
+
+   
+
+    <h3>Fade-in transition animation</h3>
+    <p> The Fade-in transition animation enhancement located on the homepage (among other pages) allows the first main image the user sees to seamlessly load in rathert than abduptly flashing in. 
+    This is done so by making the background colour <u><strong>animation: fadeInAnimation ease 1s; </strong></u>which makes the fade be 1 second 
+    of which is greater than the image load in time. 
+
+    Furthermore, making the background <u><strong> color: #FFFFFF</strong></u> the start of the load in camouflages in with the white page load in.
+
+    Moreover, this extension allows the customisability of elements undiscussed in this unit such as the <u><strong>animation-iteration-count: 0</strong></u>, 
+    and before and after <u><strong>FadeInAnimation</strong></u>  <u><strong>Opacity</strong></u>.
+    </P>
+    
+    <p><u><strong>Where I use it:</strong></u> Lines 63-78 (style.css) and on every webpage</p>
+   <p> </p>
+    <p><strong>Reference:</strong> https://stackoverflow.com/questions/11660710/css-transition-fade-in</p>
+
+
+    <h3>Hovering underline animation for navigation tab</h3>
+    <p> When the user hovers over the underlined text on the navigation bar (which hyperlinks to another page in the website), 
+        the intitial white underline changes to a rainbow colour spectrum which is between the colours yellow, blue and light purple.
+
+        This makes it easier for the user to distinguish which page link their mouse is hovering over on the navigation tab, 
+        making it easier for them to choose the right page. 
+
+        This is achieved by using <u><strong>.header_link</strong></u> and creating 2 underlines over each other given by <u><strong>linear-gradient</strong></u> and the using 
+    <u><strong>transition: background size 400ms</strong></u> which is duration of the shrinking of the white underline. 
+    
+    Furthermore  <u> <strong>focus</strong></u> and <u><strong>hover</strong></u> are used to shrink the <u><strong>background-size</strong></u> of the <u><strong>linear-gradient</strong></u> thus 
+        shrinking the white underline and thus showing the rainbow underline. 
+    </P>
+
+        <p><u><strong>Where i use it:</strong></u> Lines 10-36 (style.css).</p>
+        <p> </p>
+        <p><u><strong>Reference:</strong></u> </p>
+
+
+    <h3>All page elements resize to proportionally fit users changed window size</h3>
+    <p>This enhancement allows all the page elements such as text, image and table size to proportionally fit within the users window size 
+    whether it is 50% of their screen or 30%. This improves user experience by having them be able to clearly view the website if they have 2 applications 
+    open and are using a split screen on their window.
+
+    This has been achieved by using relative sizing such <u><strong>font-size: 10em</strong></u> or <u><strong>width = "50%" height = "50%"</strong></u> 
+    rather than using absolute metrics such as <u><strong>px</strong></u>.
+    <p>
+
+     <p><u><strong>Where i use it:</strong></u>Used on all elements </p>
+     <p> </p>
+    <p><u><strong>Reference:</strong></u> https://stackoverflow.com/questions/36054018/html-resize-text-to-keep-same-proportion-with-an-image </p>
+    </body>
+
+
+</div>
+<footer>
+    <table>
+        <tr>
+            <td>Ethan M, Leonard W, Ibrahim M B, Nicolo T, Aaryan B</td>
+            <td><a href="mailto:tag.assitance.group@gmail.com">Contact Us</a></td>
+            <td>&#169; TAG Group 2023</td>
+        </tr>
+    </table>
+</footer>
+</html>
